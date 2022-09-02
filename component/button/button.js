@@ -4,11 +4,11 @@ class Button extends HTMLElement {
     const state = this.getAttribute('text');
     const wrapper = document.createElement('div');
     const button = document.createElement('button')
-    button.innerHTML = this.getAttribute('text');
-    button.classList += 'button'
+    button.innerText = state;
+    button.classList += 'button';
 
-    wrapper.appendChild(button)
-    this.innerHTML = wrapper;
+    wrapper.appendChild(button);
+    this.append(wrapper);
   }
 }
 
