@@ -8,7 +8,7 @@ class Button extends HTMLElement {
     button.classList += 'button'
 
     wrapper.appendChild(button)
-    this.shadowRoot.append(wrapper);
+    this.innerHTML = wrapper;
   }
 }
 
