@@ -1,7 +1,6 @@
 class Button extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({mode: 'close'})
     const state = this.getAttribute('text');
     const wrapper = document.createElement('div');
     const button = document.createElement('button')
