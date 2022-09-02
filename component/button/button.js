@@ -5,7 +5,6 @@ class Button extends HTMLElement {
     const wrapper = document.createElement('div');
     const button = document.createElement('button')
     button.innerText = state;
-    button.classList += 'button';
 
     wrapper.appendChild(button);
     this.append(wrapper);
